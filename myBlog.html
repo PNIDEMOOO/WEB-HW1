@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PNIDEMOOO's Blog</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="headerContainer">
+    <div class="title">
+        <a href="" id="blogName">PNIDEMOOO 的个人网站</a>
+    </div>
+    <div class="nav">
+        <a href="" class="navLink">Home</a>
+        <a href="https://github.com/PNIDEMOOO" target="_blank" class="navLink">Github</a>
+        <a href="http://120.77.80.92/webhw1" target="_blank" class="navLink">Weibo</a>
+        <a href="http://120.77.80.92/webhw1/gou.html" target="_blank" class="navLink">+1s</a>
+    </div>
+    <div class="mainContent">
+        <div class="sidebar">
+            <div class="avatar"></div>
+            <div class="info" id="name">PNIDEMOOO</div>
+            <div class="info" id="school">Tongji University</div>
+            <div class="info" id="intro">一念天地阔，万事羽毛轻。</div>
+        </div>
+        <div class="blogContent">
+            <div class="article">
+                <h2>jQuery 选择器</h2>
+                <p>jQuery 选择器允许您对 HTML 元素组或单个元素进行操作。<br>
+                    jQuery 选择器基于元素的 id、类、类型、属性、属性值等"查找"（或选择）HTML 元素。 它基于已经存在的 CSS 选择器，除此之外，它还有一些自定义的选择器。<br>
+                    jQuery 中所有选择器都以美元符号开头：$()。
+                </p>
+                <h3>元素选择器</h3>
+                <p>jQuery 元素选择器基于元素名选取元素。<br>
+                    在页面中选取所有 &lt;p&gt; 元素: </p>
+                <blockquote>
+                    <p>$("p")</p>
+                </blockquote>
+                <h3>#id 选择器</h3>
+                <p>jQuery #id 选择器通过 HTML 元素的 id 属性选取指定的元素。<br>
+                    页面中元素的 id 应该是唯一的，所以您要在页面中选取唯一的元素需要通过 #id 选择器。<br>
+                    通过 id 选取元素语法如下：
+                </p>
+                <blockquote>
+                    <p>$("#test")</p>
+                </blockquote>
+                <h3>.class 选择器</h3>
+                <p>jQuery 类选择器可以通过指定的 class 查找元素。<br>
+                    语法如下：
+                </p>
+                <blockquote>
+                    <p>$(".test")</p>
+                </blockquote>
+                <h3>其他实例</h3>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>语法</th>
+                        <th>描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>$("*")</td>
+                        <td>选取所有元素</td>
+                    </tr>
+                    <tr>
+                        <td>$(this)</td>
+                        <td>选取当前 HTML 元素</td>
+                    </tr>
+                    <tr>
+                        <td>$("p.intro")</td>
+                        <td>选取 class 为 intro 的 &lt;p&gt; 元素</td>
+                    </tr>
+                    <tr>
+                        <td>$("p:first")</td>
+                        <td>选取第一个 &lt;p&gt; 元素</td>
+                    </tr>
+                    <tr>
+                        <td>$("ul li:first")</td>
+                        <td>选取第一个 &lt;ul&gt; 元素的第一个 &lt;li&gt; 元素</td>
+                    </tr>
+                    <tr>
+                        <td>$("ul li:first-child")</td>
+                        <td>选取每个 &lt;ul&gt; 元素的第一个 &lt;li&gt; 元素</td>
+                    </tr>
+                    <tr>
+                        <td>$("[href]")</td>
+                        <td>选取带有 href 属性的元素</td>
+                    </tr>
+                    <tr>
+                        <td>$("a[target='_blank']")</td>
+                        <td>选取所有 target 属性值等于 "_blank" 的 &lt;a&gt; 元素</td>
+                    </tr>
+                    <tr>
+                        <td>$("a[target!='_blank']")</td>
+                        <td>选取所有 target 属性值不等于 "_blank" 的 &lt;a&gt; 元素</td>
+                    </tr>
+                    <tr>
+                        <td>$(":button")</td>
+                        <td>选取所有 type="button" 的 &lt;input&gt; 元素 和 &lt;button&gt; 元素</td>
+                    </tr>
+                    <tr>
+                        <td>$("tr:even")</td>
+                        <td>选取偶数位置的 &lt;tr&gt; 元素</td>
+                    </tr>
+                    <tr>
+                        <td>$("tr:odd")</td>
+                        <td>选取奇数位置的 &lt;tr&gt; 元素</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
